@@ -1,0 +1,11 @@
+
+/////////test
+
+
+npm run testb
+
+aws s3 sync build/ s3://sustergya-test --acl public-read
+
+aws cloudfront create-invalidation --distribution-id E3Q25UO6RK2AMQ --paths "/*"
+
+
